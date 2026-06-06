@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "renderfix",
+  "version": "${version}",
+  "name": "RenderFix",
+  "description": "Fixes rendering glitches at non-native resolution (Alt+Tab, Win+Shift+S, volume OSD, etc.).",
+  "authors": [
+    "Alon"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.alon.renderfix.RenderFixMod"
+    ]
+  },
+  "mixins": [
+    "renderfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "fabric-api": "*",
+    "minecraft": "1.21.11"
+  }
+}
